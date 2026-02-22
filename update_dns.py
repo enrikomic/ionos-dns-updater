@@ -12,8 +12,8 @@ Setup in configuration.yaml:
       allow_all_imports: true
       apps:
         ionos_dns_updater:
-          api_key: "aefd97fe66ea4a06a44f6838e503e4f1.s3u_pFct..."
-          domain: "kitkit.fr"
+          api_key: "your_prefix.your_secret"
+          domain: "your-domain.tld"
 
 File location: <config>/pyscript/ionos_dns_updater.py
 """
@@ -63,10 +63,10 @@ async def update_ionos_dns(ip=None, dry_run=False):
     """Update all A records for the configured domain on IONOS."""
     cfg = pyscript.config.get("apps", {}).get("ionos_dns_updater", {})
     api_key = cfg.get("api_key")
-    domain = cfg.get("domain", "kitkit.fr")
+    domain = cfg.get("domain")
 
-    if not api_key:
-        log.error("ionos_dns_updater: api_key not set in configuration.yaml")
+    if not api_key or not domain:
+        log.error("ionos_dns_updater: api_key and domain must be set in configuration.yaml")
         return
 
     try:
