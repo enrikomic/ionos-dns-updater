@@ -1,4 +1,4 @@
-# IONOS DNS Updater
+# IONOS DNS Updater for Home Assistant
 
 Updates all DNS A records for a domain (and its subdomains) hosted on IONOS, using the [IONOS Developer DNS API](https://developer.hosting.ionos.com/docs/dns).
 
