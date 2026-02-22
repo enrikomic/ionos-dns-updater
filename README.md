@@ -1,6 +1,6 @@
 # IONOS DNS Updater for Home Assistant
 
-![License](https://img.shields.io/github/license/enrikomic/ionos-dns-updater)
+![License](https://img.shields.io/badge/license-Apache%202.0-green)
 ![Python](https://img.shields.io/badge/python-3.8+-blue)
 ![Home Assistant](https://img.shields.io/badge/Home%20Assistant-pyscript-41BDF5)
 
