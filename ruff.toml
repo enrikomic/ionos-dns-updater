@@ -1,0 +1,4 @@
+[lint]
+# F821: pyscript injects builtins (log, pyscript, service, pyscript_executor)
+# at runtime — these are not resolvable statically.
+ignore = ["F821"]
