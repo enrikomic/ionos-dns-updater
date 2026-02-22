@@ -87,7 +87,11 @@ This project was fully generated with AI using [Claude Code](https://claude.ai/c
 
 ```
 ionos-dns-updater/
-├── update_dns.py   # pyscript service
+├── .github/
+│   └── workflows/
+│       └── lint.yml    # GitHub Actions ruff linter
+├── update_dns.py       # pyscript service
+├── ruff.toml           # ruff linter config
 ├── .gitignore
 └── README.md
 ```
