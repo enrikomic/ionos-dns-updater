@@ -1,5 +1,9 @@
 # IONOS DNS Updater for Home Assistant
 
+![License](https://img.shields.io/github/license/enrikomic/ionos-dns-updater)
+![Python](https://img.shields.io/badge/python-3.8+-blue)
+![Home Assistant](https://img.shields.io/badge/Home%20Assistant-pyscript-41BDF5)
+
 Updates all DNS A records for a domain (and its subdomains) hosted on IONOS, using the [IONOS Developer DNS API](https://developer.hosting.ionos.com/docs/dns).
 
 Exposed as a **Home Assistant pyscript service**.
